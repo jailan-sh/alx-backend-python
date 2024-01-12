@@ -3,7 +3,6 @@
 from typing import Tuple, List, Any
 
 
-
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """a type-annotated function"""
     zoomed_in: List = [
