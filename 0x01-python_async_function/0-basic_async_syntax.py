@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+an asynchronous coroutine that takes in an integer argument (max_delay)
+named wait_random returns a random delay
+"""
 import random
 import asyncio
 
