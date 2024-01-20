@@ -4,9 +4,10 @@ make Async Generator
 """
 import asyncio
 import random
+import typing
 
 
-async def async_generator() -> int:
+async def async_generator() -> typing.Generator[float, None, None]:
     """
     return await list between 0-10
     """
