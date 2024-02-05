@@ -8,8 +8,10 @@ from parameterized import parameterized
 from typing import Mapping, Sequence, Any
 
 
-class TestAcessNestedMap(unittest.TestCase):
-    """ test access_nested_map"""
+class TestAccessNestedMap(unittest.TestCase):
+    """
+    test access_nested_map
+    """
     @parameterized.expand([
         ({"a": 1}, ("a",), 1),
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
