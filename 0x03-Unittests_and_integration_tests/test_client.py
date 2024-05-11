@@ -88,11 +88,12 @@ class TestGithubOrgClient(unittest.TestCase):
         return MockResponse(TEST_PAYLOAD[0][1])
 
 
-@parameterized_class(
+    @parameterized_class(
     ('org_payload', 'repos_payload', 'expected_repos', 'apache2_repos'),
     [(TEST_PAYLOAD[0][0], TEST_PAYLOAD[0][1], TEST_PAYLOAD[0][2],
       TEST_PAYLOAD[0][3])]
-)
+    )
+
 class TestIntegrationGithubOrgClient(unittest.TestCase):
     """
     Integration test for the GithubOrgClient.public_repos method
